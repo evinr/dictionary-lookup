@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dictionary Lookup Demo</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<!-- 	 <script src='./resources/app.js'></script>
+    <link rel='stylesheet' type='text/css' href='./resources/style.css'> -->
+	<style type='text/css'>
+	   
+	
+	</style>
+</head>
+<body>
+    <main>
+        <h2>Words that Match</h2>
+        <input id="word" type="text">
+        <button id="simple">Add Simple Dictionary</button>
+        <!-- <button id="full">Add Full Dictionary</button> -->
+        <section id="results">
+
+        </section>
+    </main>
+
+</body>
+
+<script>
+    // load wordlist trie
+    document.getElementById('simple').addEventListener('click', function(e){
+        console.log(e)
+    })
+    // use performance.now() to get a rough idea of timings
+
+    // load into a trie
+        // the trie should be consumable by the browser
+
+    // on change of the input, return matches
+    document.getElementById('word').addEventListener("input", function(e){
+        console.log(e.srcElement.value) // the entire entry
+        console.log(e.data) // the individual letter
+    })
+
+</script>
+</html>
